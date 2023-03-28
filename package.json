@@ -1,0 +1,34 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e:run": "npx cypress run --browser chrome",
+    "e2e:open": "npx cypress open --browser chrome",
+    "e2e:home": "npm run e2e:run -- --spec cypress/e2e/home/home.feature",
+    "e2e:landing": "npm run e2e:run -- --spec cypress/e2e/landing/landing.feature",
+    "e2e:login": "npm run e2e:run -- --spec cypress/e2e/login/login.feature",
+    "e2e:logout": "npm run e2e:run -- --spec cypress/e2e/logout/logout.feature",
+    "e2e:save-profile": "npm run e2e:run -- --spec cypress/e2e/profile/save-profile/save-profile.feature",
+    "e2e:view-profile": "npm run e2e:run -- --spec cypress/e2e/profile/view-profile/view-profile.feature",
+    "e2e:request-quotation": "npm run e2e:run -- --spec cypress/e2e/quotation/request-quotation/request-quotation.feature",
+    "e2e:retrieve-quotation": "npm run e2e:run -- --spec cypress/e2e/quotation/retrieve-quotation/retrieve-quotation.feature"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaibhav6792/cypressautomation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaibhav6792/cypressautomation/issues"
+  },
+  "homepage": "https://github.com/vaibhav6792/cypressautomation#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^16.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.8.1"
+  }
+}
